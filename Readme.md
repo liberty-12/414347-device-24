@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Екатерина Кортошкина](https://up.htmlacademy.ru/htmlcss/24/user/414347).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Рогатнев](https://htmlacademy.ru/profile/nikita_rogatnev).
 
 ---
 
