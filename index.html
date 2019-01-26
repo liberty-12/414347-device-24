@@ -6,20 +6,20 @@
   </head>
   <body>
     <header class="main-header">
-      <a class="logo-link" href="#">
-        <img class="main-logo" src="" width="" height="" alt="Логотип"/>
+      <a class="logo-link">
+        <img class="main-logo" src="" width="" height="" alt="Логотип" />
       </a>
-      <div class="user-navigation">
-        <input type="search" name="search" />
-        <a class="login-link" href="#">Войти</a>
-        <a class="compare-link" href="#">Сравнить</a>
-        <a class="cart-link" href="#">Корзина</a>
-      </div>
+      <ul class="user-navigation">
+        <li><input type="search" name="search" /></li>
+        <li><a class="login-link" href="#">Войти</a></li>
+        <li><a class="compare-link" href="#">Сравнить</a></li>
+        <li><a class="cart-link" href="#">Корзина</a></li>
+      </ul>
       <nav class="main-nav">
         <ul class="nav-list">
           <li class="nav-item">
             <a class="nav-link catalog" href="#">
-              <p>Каталог товаров</p>
+              Каталог товаров
               <ul class="catalog-list">
                 <li class="catalog-item">
                   <a class="catalog-link" href="#">Виртуальная реальность</a>
@@ -50,8 +50,9 @@
     </header>
 
     <main class="main-container">
+      <h1 class="visually-hidden">Главная страница</h1>
       <section class="slider">
-        <h1 class="visually-hidden">Слайдер</h1>
+        <h2 class="visually-hidden">Слайдер</h2>
         <ul class="slider-list">
           <li class="slider-item slide1">
             <img class="slider-img" src="" width="" height="" alt="Палка для селфи"/>
@@ -101,66 +102,68 @@
         </ul>
       </section>
       <section class="popular">
-        <h1 class="visually-hidden">Популярные товары</h1>
+        <h2 class="visually-hidden">Популярные товары</h2>
         <ul class="popular-list">
           <li class="popular-item">
-            <a class="popular-link" href="">
+            <a class="popular-link" href="#">
               <img src="" width="" height="" alt="Виртуальная реальность">
-              <p>Виртуальная реальность</p>
+              <span>Виртуальная реальность</span>
             </a>
           </li>
           <li class="popular-item">
-            <a class="popular-link" href="">
+            <a class="popular-link" href="#">
               <img src="" width="" height="" alt="Моноподы для селфи">
-              <p>Моноподы для селфи</p>
+              <span>Моноподы для селфи</span>
             </a>
           </li>
           <li class="popular-item">
-            <a class="popular-link" href="">
+            <a class="popular-link" href="#">
               <img src="" width="" height="" alt="Экшн-камеры">
-              <p>Экшн-камеры</p>
+              <span>Экшн-камеры</span>
             </a>
           </li>
           <li class="popular-item">
-            <a class="popular-link" href="">
+            <a class="popular-link" href="#">
               <img src="" width="" height="" alt="Фитнес-браслеты">
-              <p>Фитнес-браслеты</p>
+              <span>Фитнес-браслеты</span>
             </a>
           </li>
           <li class="popular-item">
-            <a class="popular-link" href="">
+            <a class="popular-link" href="#">
               <img src="" width="" height="" alt="Умные часы">
-              <p>Умные часы</p>
+              <span>Умные часы</span>
             </a>
           </li>
           <li class="popular-item">
-            <a class="popular-link" href="">
+            <a class="popular-link" href="#">
               <img src="" width="" height="" alt="Квадрокоптеры">
-              <p>Квадрокоптеры</p>
+              <span>Квадрокоптеры</span>
             </a>
           </li>
         </ul>
       </section>
       <section class="services">
-        <h1 class="visually-hidden">Сервисы</h1>
-        <p>Доставка</p>
-        <p>Гарантия</p>
-        <p>Кредит</p>
+        <h2 class="visually-hidden">Сервисы</h2>
         <ul class="service-list">
-          <li class="service-item">
+          <li class="service-item"><a href="" class="service-item-link">Доставка</a></li>
+          <li class="service-item"><a href="" class="service-item-link">Гарантия</a></li>
+          <li class="service-item"><a href="" class="service-item-link">Кредит</a></li>
+        </ul>
+        <ul class="service-description-list">
+          <li class="service-description-item">
             <h2>Доставка</h2>
             <p>Мы с удовольствием доставим ваш товар прямо
               к вашему подъезду совершенно бесплатно!
               Ведь мы неплохо заработаем,
               поднимая его на ваш этаж.</p>
           </li>
-          <li class="service-item">
+          <li class="service-description-item">
             <h2>Гарантия</h2>
             <p>Если из-за возгорания купленного у нас товара
                у вас сгорит дом — не переживайте, мы выдадим вам новый.
               Товар, не дом, конечно же.</p>
           </li>
-          <li class="service-item">
+          <li class="service-description-item">
             <h2>Кредит</h2>
             <p>Залезть в долговую яму стало проще!
               Кредитные консультанты подберут для вас наиболее выгодные
@@ -169,11 +172,29 @@
         </ul>
       </section>
       <section class="logotypes">
-        <h1 class="visually-hidden">Логотипы</h1>
-        <img src="" width="" height="" alt="Логотип">
-        <img src="" width="" height="" alt="Логотип">
-        <img src="" width="" height="" alt="Логотип">
-        <img src="" width="" height="" alt="Логотип">
+        <h2 class="visually-hidden">Логотипы</h2>
+        <ul class="logotype-list">
+          <li class="logotype-item">
+            <a href="" class="logotype-item-link">
+              <img src="" width="" height="" alt="Логотип">
+            </a>
+          </li>
+          <li class="logotype-item">
+            <a href="" class="logotype-item-link">
+              <img src="" width="" height="" alt="Логотип">
+            </a>
+          </li>
+          <li class="logotype-item">
+            <a href="" class="logotype-item-link">
+              <img src="" width="" height="" alt="Логотип">
+            </a>
+          </li>
+          <li class="logotype-item">
+            <a href="" class="logotype-item-link">
+              <img src="" width="" height="" alt="Логотип">
+            </a>
+          </li>
+        </ul>
       </section>
       <section class="info">
         <h2>О нас</h2>
@@ -195,31 +216,29 @@
            Заодно, вы сможете проверить работоспособность покупки.
            Всякое бывает.
         </p>
-        <img class="map" src="" width="" height="" />
+        <a href="#" class="map"><img src="" width="" height="" /></a>
         <a class="button feedback-button">Напишите нам</a>
       </section>
     </main>
 
     <footer class="main-footer">
-      <a class="logo-link" href="#">
+      <a class="logo-link">
         <img class="main-logo" src="" width="" height="" alt="Логотип"/>
       </a>
-      <div class="user-navigation">
-        <a class="login-link" href="#">Войти</a>
-        <a class="compare-link" href="#">Сравнить</a>
-        <a class="cart-link" href="#">Корзина</a>
-      </div>
+      <ul class="user-navigation">
+        <li><a class="login-link" href="#">Войти</a></li>
+        <li><a class="compare-link" href="#">Сравнить</a></li>
+        <li><a class="cart-link" href="#">Корзина</a></li>
+      </ul>
       <p class="address">г. Москва, ул. Строителей, 15</p>
-      <nav class="footer-nav">
-        <ul class="nav-list">
-          <li class="nav-item"><a class="nav-link footer-link delivery" href="#">Доставка</a></li>
-          <li class="nav-item"><a class="nav-link footer-link guarantee" href="#">Гарантии</a></li>
-          <li class="nav-item"><a class="nav-link footer-link contacts" href="#">Контакты</a></li>
-        </ul>
-      </nav>
+      <ul class="footer-nav-list">
+        <li class="nav-item"><a class="nav-link footer-link delivery" href="#">Доставка</a></li>
+        <li class="nav-item"><a class="nav-link footer-link guarantee" href="#">Гарантии</a></li>
+        <li class="nav-item"><a class="nav-link footer-link contacts" href="#">Контакты</a></li>
+      </ul>
       <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
       <section class="footer-social">
-        <h1 class="visually-hidden">Социальные сети</h1>
+        <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="footer-social-link" title="Фейсбук" href="#">Фейсбук</a>
