@@ -12,7 +12,11 @@
       <img class="main-logo" src="" width="" height="" alt="Логотип" />
     </a>
     <ul class="user-navigation">
-      <li><input type="search" name="search" /></li>
+      <li>
+        <form class="search-form"  method="post" action="https://htmlacademy.ru/">
+          <input type="search" name="search" />
+        </form>
+      </li>
       <li><a class="login-link" href="#">Войти</a></li>
       <li><a class="compare-link" href="#">Сравнить</a></li>
       <li><a class="cart-link" href="#">Корзина</a></li>
@@ -222,7 +226,7 @@
   </main>
 
   <footer class="main-footer">
-    <div>
+    <div class="logo-link-wrapper">
       <a class="logo-link">
         <img class="main-logo" src="" width="" height="" alt="Логотип" />
       </a>
@@ -232,7 +236,7 @@
       <li><a class="compare-link" href="#">Сравнить</a></li>
       <li><a class="cart-link" href="#">Корзина</a></li>
     </ul>
-    <div>
+    <div class="address-wrapper">
       <p class="address">г. Москва, ул. Строителей, 15</p>
     </div>
     <ul class="footer-nav-list">
@@ -240,7 +244,7 @@
       <li class="nav-item"><a class="nav-link footer-link guarantee" href="#">Гарантии</a></li>
       <li class="nav-item"><a class="nav-link footer-link contacts" href="#">Контакты</a></li>
     </ul>
-    <div>
+    <div class="phone-number-wrapper">
       <p class="phone-number">Тел.:<a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
     </div>
     <section class="footer-social">
@@ -270,7 +274,7 @@
   </section>
 
   <section class="contact-popup hidden">
-    <form class="contact-popuo-form" method="post" action="#">
+    <form class="contact-popuo-form" method="post" action="https://htmlacademy.ru/">
       <label for="name">Ваше имя:</label>
       <input type="text" name="name" id="name" placeholder="Имя Фамилия" />
 

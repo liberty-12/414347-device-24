@@ -12,7 +12,11 @@
       <img class="main-logo" src="" width="" height="" alt="Логотип" />
     </a>
     <ul class="user-navigation">
-      <li><input type="search" name="search" /></li>
+      <li>
+        <form class="search-form"  method="post" action="https://htmlacademy.ru/">
+          <input type="search" name="search" />
+        </form>
+      </li>
       <li><a class="profile-link" href="#">Валентин Петухов</a></li>
       <li><a class="login-link" href="#">Выйти</a></li>
       <li><a class="compare-link" href="#">Сравнить</a></li>
@@ -122,6 +126,10 @@
         <li class="sort-item"><a class="sort-item-link" href="#">По типу</a></li>
         <li class="sort-item"><a class="sort-item-link" href="#">По популярности</a></li>
       </ul>
+      <ul class="order-list">
+        <li class="order-item order-item-up"><a href="#" class="order-item-link"></a></li>
+        <li class="order-item order-item-down"><a href="#" class="order-item-link"></a></li>
+      </ul>
     </section>
 
     <section class="catalog">
@@ -200,7 +208,7 @@
   </main>
 
   <footer class="main-footer">
-    <div>
+    <div class="logo-link-wrapper">
       <a class="logo-link" href="index.html">
         <img class="main-logo" src="" width="" height="" alt="Логотип" />
       </a>
@@ -211,7 +219,7 @@
       <li><a class="compare-link" href="#">Сравнить</a></li>
       <li><a class="cart-link" href="#">Корзина</a></li>
     </ul>
-    <div>
+    <div class="address-wrapper">
       <p class="address">г. Москва, ул. Строителей, 15</p>
     </div>
     <ul class="footer-nav-list">
@@ -219,7 +227,7 @@
       <li class="nav-item"><a class="nav-link footer-link guarantee" href="#">Гарантии</a></li>
       <li class="nav-item"><a class="nav-link footer-link contacts" href="#">Контакты</a></li>
     </ul>
-    <div>
+    <div class="phone-number-wrapper">
       <p class="phone-number">Тел.:<a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
     </div>
     <section class="footer-social">
