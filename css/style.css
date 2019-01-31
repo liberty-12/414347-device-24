@@ -1,82 +1,80 @@
 
 /* HEADER */
 
-.logo-link {
-  text-decoration: none;
-}
-
-.searc1h-form-input:placeholder {
-  font-family: "OpenSans";
-  font-size: 15px;
-  line-height: 30px;
-  /* font-weight: ; */
-  /* letter-spacing: 0.01em;  */
-  color: rgba(0, 0, 0, 0.3);
+.visually-hidden {
+  font-family: "Gilroy", "Calibri", sans-serif;
+    font-size: 12px;
+  line-height: 16px;
+  font-weight: 800;
+  /* letter-spacing: ; */
+  color: #000000;
 }
 
 .user-navigation-link {
   text-decoration: none;
-  font-family: "OpenSans"
+  font-family: "Open Sans", "Calibri", sans-serif;
     font-size: 15px;
   line-height: 30px;
+  font-weight: 300;
+  letter-spacing: 0.15px;
   color: #000000;
 }
 
 .nav-link {
   text-decoration: none;
-  font-family: "Gilroy"
+  font-family: "Gilroy", "Calibri", sans-serif;
     font-size: 18px;
   line-height: 24px;
-  /* font-weight: ; */
-  /* letter-spacing: ; */
+  font-weight: 800;
+  letter-spacing: 3.6px;
   color: #000000;
 }
 
 .catalog-link {
   text-decoration: none;
-  font-family: "OpenSans"
+  font-family: "Open Sans", "Calibri", sans-serif;
     font-size: 15px;
   line-height: 30px;
-  /* font-weight: ; */
-  /* letter-spacing: ; */
+  font-weight: 300;
+  letter-spacing: 0.15px;
   color: #000000;
 }
 
 /* INDEX.HTML */
 
 .slider-item h2 {
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 47px;
   line-height: 56px;
-  /* letter-spacing: ; */
-  /* font-weight: ; */
+  letter-spacing: 0.17px;
+  font-weight: 800;
   color: #000000;
 }
 
 .slider-item p {
-  font-family: "OpenSans"
+  font-family: "Open Sans", "Calibri", sans-serif;
     font-size: 15px;
   line-height: 30px;
-  /* font-weight: ; */
-  /* letter-spacing: ; */
+  font-weight: 300;
+  letter-spacing: 0.15px;
   color: #464646;
 }
 
 dt {
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 36px;
   line-height: 48px;
-  /* letter-spacing: ; */
-  /* font-weight: ; */
+  letter-spacing: 0.36px;
+  font-weight: 300;
   color: #000000;
 }
 
 dd {
-  font-family: "OpenSans"
+  font-family: "Open Sans", "Calibri", sans-serif;
     font-size: 13px;
   line-height: 20px;
-  /* font-weight: ; */
-  /* letter-spacing: ; */
+  font-weight: 300;
+  letter-spacing: 0.13px;
   color: #464646;
 }
 
@@ -86,196 +84,202 @@ dd {
 }
 
 .popular-link span {
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 18px;
   line-height: 24px;
-  /* letter-spacing: ; */
-  /* font-weight: ; */
+  letter-spacing: 0.18px;
+  font-weight: 800;
   color: #000000;
 }
 
 .service-item-link {
   text-decoration: none;
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 18px;
   line-height: 24px;
-  /* letter-spacing: ; */
-  /* font-weight: ; */
+  letter-spacing: 2.15px;
+  font-weight: 800;
   color: #000000;
 }
 
 .service-description-item h2 {
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 47px;
   line-height: 48px;
-  /* letter-spacing: ; */
-  /* font-weight: ; */
+  letter-spacing: 0.21px;
+  font-weight: 800;
   color: #000000;
 }
 
 .service-description-item p {
-  font-family: "OpenSans"
+  font-family: "Open Sans", "Calibri", sans-serif;
   font-size: 15px;
   line-height: 30px;
-  /* font-weight: ; */
-  /* letter-spacing: ; */
+  font-weight: 300;
+  letter-spacing: 0.15px;
   color: #464646;
 }
 
 .info h2 {
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 47px;
   line-height: 48px;
-  /* letter-spacing: ; */
-  /* font-weight: ; */
+  letter-spacing: 0.21px;
+  font-weight: 800;
   color: #000000;
 }
 
 .info p {
-  font-family: "OpenSans"
+  font-family: "Open Sans", "Calibri", sans-serif;
   font-size: 15px;
   line-height: 30px;
-  /* font-weight: ; */
+  font-weight: 300;
   color: #464646;
 }
 
 .info-item {
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 16px;
   line-height: 40px;
-  /* letter-spacing: ; */
-  /* font-weight: ; */
+  font-weight: 800;
   color: #000000;
 }
 
 .contacts h2 {
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 47px;
   line-height: 48px;
-  /* letter-spacing: ; */
-  /* font-weight: ; */
+  letter-spacing: 0.21px;
+  font-weight: 800;
   color: #000000;
+}
+
+.contacts p {
+  font-family: "Open Sans", "Calibri", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #464646;
 }
 
 /* CATALOG.HTML */
 .main-heading {
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 47px;
   line-height: 48px;
-  /* letter-spacing: ; */
-  /* font-weight: ; */
+  letter-spacing: 0.17px;
+  font-weight: 800;
   color: #000000;
 }
 
 .breadcrumbs-link {
   text-decoration: none;
-  font-family: "OpenSans";
+  font-family: "Open Sans", "Calibri", sans-serif;
   font-size: 14px;
   line-height: 24px;
-  /* letter-spacing: ; */
-  /* font-weight: ; */
+  letter-spacing: 0.14px;
+  font-weight: 300;
   color: #000000;
 }
 
 .form h2 {
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  /* letter-spacing: ; */
-  /* font-weight: ; */
+  letter-spacing: 0.91px;
+  font-weight: 800;
   color: #000000;
 }
 
 .range-div label {
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 18px;
   line-height: 24px;
-  /* letter-spacing: ; */
-  /* font-weight: ; */
+  letter-spacing: 0.18px;
+  font-weight: 800;
   color: #000000;
 }
 
 .color legend {
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 18px;
   line-height: 24px;
-  /* letter-spacing: ; */
-  /* font-weight: ; */
+  letter-spacing: 0.18px;
+  font-weight: 800;
   color: #000000;
 }
 
 .bluetooth legend {
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 18px;
   line-height: 24px;
-  /* letter-spacing: ; */
-  /* font-weight: ; */
+  letter-spacing: 0.18px;
+  font-weight: 800;
   color: #000000;
 }
 
 .filter-option label {
-  font-family: "OpenSans"
+  font-family: "Open Sans", "Calibri", sans-serif;
   font-size: 14px;
   line-height: 40px;
-  /* font-weight: ; */
-  /* letter-spacing: ; */
+  font-weight: 300;
+  letter-spacing: 0.14px;
   color: #ffffff;
 }
 
 .sort h2 {
-  font-family: "OpenSans"
-  font-size: 14px;
-  line-height: 18px;
-  /* font-weight: ; */
-  /* letter-spacing: ; */
+  font-family: "Gilroy", "Calibri", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.91px;
+  font-weight: 800;
   color: #000000;
 }
 
 .sort-item-link {
   text-decoration: none;
-  font-family: "OpenSans"
+  font-family: "Open Sans", "Calibri", sans-serif;
   font-size: 14px;
   line-height: 18px;
-  /* font-weight: ; */
-  /* letter-spacing: ; */
+  font-weight: 400;
   color: rgba(0, 0, 0, 0.3);
 }
 
 .catalog-item-description a {
   text-decoration: none;
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 18px;
   line-height: 24px;
-  /* letter-spacing: ; */
-  /* font-weight: ; */
+  letter-spacing: 0.18px;
+  font-weight: 800;
   color: #000000;
 }
 
 .catalog-item-price {
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  /* letter-spacing: ; */
-  /* font-weight: ; */
+  letter-spacing: 0.16px;
+  font-weight: 300;
   color: #464646;
 }
 
 .pages-item-link {
   text-decoration: none;
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  /* letter-spacing: ; */
-  /* font-weight: ; */
+  letter-spacing: 0.91px;
+  font-weight: 800;
   color: #000000;
 }
 
 /* FOOTER */
 .address {
-  font-family: "OpenSans"
+  font-family: "Open Sans", "Calibri", sans-serif;
   font-size: 15px;
   line-height: 30px;
-  /* font-weight: ; */
+  font-weight: 300;
   color: #ffffff;
 }
 
@@ -296,10 +300,10 @@ dd {
 }
 
 .phone-number {
-  font-family: "OpenSans"
+  font-family: "Open Sans", "Calibri", sans-serif;
   font-size: 15px;
   line-height: 30px;
-  /* font-weight: ; */
+  font-weight: 300;
   color: #ffffff;
 }
 
