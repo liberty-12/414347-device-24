@@ -449,6 +449,57 @@ dd {
 }
 
 /* FOOTER */
+.main-footer-wrapper {
+  background-color: #464646;
+}
+
+.main-footer .main-logo {
+  fill: #ffc600;
+}
+
+.main-footer .main-logo:hover,
+.main-footer .main-logo:focus {
+  fill: rgba(255, 198, 0, 0.6);
+}
+
+.main-footer .main-logo:active {
+  fill: rgba(255, 198, 0, 0.3);
+}
+
+.main-footer .user-navigation-link {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.main-footer .user-navigation-link:hover,
+.main-footer .user-navigation-link:focus {
+  color: #ffffff;
+}
+
+.main-footer .user-navigation-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.main-footer .user-icon,
+.main-footer .compare-icon,
+.main-footer .cart-icon {
+  fill: #ffc600;
+}
+
+.main-footer .user-icon:hover,
+.main-footer .user-icon:focus,
+.main-footer .compare-icon:hover,
+.main-footer .compare-icon:focus,
+.main-footer .cart-icon:hover,
+.main-footer .cart-icon:focus {
+  fill: rgba(255, 198, 0, 0.6);
+}
+
+.main-footer .user-icon:active,
+.main-footer .compare-icon:active,
+.main-footer .cart-icon:active {
+  fill: rgba(255, 198, 0, 0.3);
+}
+
 .address {
   font-family: "Open Sans", "Calibri", sans-serif;
   font-size: 15px;
@@ -467,22 +518,13 @@ dd {
   color: #ffffff;
 }
 
-.footer-social-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+  color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-social-link {
-  text-decoration: none;
-}
-
-.academy-link {
-  text-decoration: none;
-}
-
-.main-footer .user-navigation-link {
-  color: #ffffff;
+.footer-nav-link:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .phone-number {
@@ -496,4 +538,45 @@ dd {
 .phone-number-link {
   text-decoration: none;
   color: #ffffff;
+}
+
+.footer-social-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-social-link {
+  text-decoration: none;
+}
+
+.footer-social-icon  {
+  fill: rgba(255, 255, 255, 0.3);
+}
+
+.footer-social-icon:hover path,
+.footer-social-icon:focus path {
+  fill: rgba(255, 255, 255, 0.6);
+}
+
+.footer-social-icon:active path {
+  fill: rgba(255, 255, 255, 0.1);
+}
+
+.academy-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.academy-logo-icon {
+  fill: #ffc600;
+}
+
+.academy-logo-icon:hover,
+.academy-logo-icon:focus {
+  fill: rgba(255, 198, 0, 0.6);
+}
+
+.academy-logo-icon:active {
+  fill: rgba(255, 198, 0, 0.3);
 }
