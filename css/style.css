@@ -562,20 +562,37 @@ dd {
 }
 
 .footer-social-link {
+  display: block;
+  width: 32px;
+  height: 32px;
   text-decoration: none;
 }
 
-.footer-social-icon  {
-  fill: rgba(255, 255, 255, 0.3);
+.footer-social-link::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/facebook.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
 }
 
-.footer-social-icon:hover path,
-.footer-social-icon:focus path {
-  fill: rgba(255, 255, 255, 0.6);
+.instagram::before {
+  background-image: url("../img/instagram.svg");
 }
 
-.footer-social-icon:active path {
-  fill: rgba(255, 255, 255, 0.1);
+.twitter::before {
+  background-image: url("../img/twitter.svg");
+}
+
+.footer-social-link:hover::before,
+.footer-social-link:focus::before {
+  opacity: 0.6;
+}
+
+.footer-social-link:active::before {
+  opacity: 0.1;
 }
 
 .academy-link {
