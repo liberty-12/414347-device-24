@@ -1,4 +1,8 @@
 /* HEADER */
+a {
+  text-decoration: none;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -184,6 +188,33 @@
   font-weight: 300;
   letter-spacing: 0.15px;
   color: #464646;
+}
+
+.button {
+  display: block;
+  width: 220px;
+  height: 40px;
+  border: 1px solid red;
+
+  background: linear-gradient(to bottom, transparent 0%, transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%, transparent 100%);
+
+  font-family: "Gilroy", "Calibri", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 2.15px;
+  font-weight: 800;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.button:hover,
+.button:focus {
+  background: #f0c52e;
+}
+
+.button:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 dt {
