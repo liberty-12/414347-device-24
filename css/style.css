@@ -550,6 +550,7 @@ dd {
   line-height: 24px;
   letter-spacing: 0.91px;
   font-weight: 800;
+  text-transform: uppercase;
   color: #000000;
 }
 
