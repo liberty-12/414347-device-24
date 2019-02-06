@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @font-face {
   font-family: "Gilroy";
   font-style: normal;
@@ -24,6 +25,8 @@ body {
   background-color: #ffffff;
 }
 
+=======
+>>>>>>> svg
 a {
   text-decoration: none;
 }
@@ -679,12 +682,21 @@ dd {
   background-image: url("../img/facebook.svg");
   background-repeat: no-repeat;
   opacity: 0.3;
+<<<<<<< HEAD
 }
 
 .instagram::before {
   background-image: url("../img/instagram.svg");
 }
 
+=======
+}
+
+.instagram::before {
+  background-image: url("../img/instagram.svg");
+}
+
+>>>>>>> svg
 .twitter::before {
   background-image: url("../img/twitter.svg");
 }
