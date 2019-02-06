@@ -1,4 +1,23 @@
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 300;
+  src: url("gilroylight.woff2") format ("woff2"), url("gilroylight.woff") format ("woff");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  src: url("gilroyextrabold.woff2") format ("woff2"), url("gilroyextrabold.woff") format ("woff");
+}
+
+a {
+  text-decoration: none;
+}
+
 /* HEADER */
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -25,6 +44,42 @@
 
 .main-logo:active {
   opacity: 0.3;
+}
+
+.user-navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.user-navigation-link {
+  text-decoration: none;
+  font-family: "Open Sans", "Calibri", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  letter-spacing: 0.15px;
+  color: #000000;
+}
+
+.user-navigation-link:hover,
+.user-navigation-link:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.user-navigation-link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-header .search-form::before {
+  content: "";
+  display: block;
+
+  width: 16px;
+  height: 16px;
+
+  background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
 }
 
 .search-form-input {
@@ -85,29 +140,37 @@
   color: rgba(255, 255, 255, 0.3);
 }
 
-.user-navigation {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.main-header .profile-link::before {
+  content: "";
+  display: block;
+
+  width: 13px;
+  height: 12px;
+
+  background-image: url("../img/user.svg");
+  background-repeat: no-repeat;
 }
 
-.user-navigation-link {
-  text-decoration: none;
-  font-family: "Open Sans", "Calibri", sans-serif;
-  font-size: 15px;
-  line-height: 30px;
-  font-weight: 300;
-  letter-spacing: 0.15px;
-  color: #000000;
+.main-header .compare-link::before {
+  content: "";
+  display: block;
+
+  width: 10px;
+  height: 10px;
+
+  background-image: url("../img/compare.svg");
+  background-repeat: no-repeat;
 }
 
-.user-navigation-link:hover,
-.user-navigation-link:focus {
-  color: rgba(0, 0, 0, 0.6);
-}
+.main-header .cart-link::before {
+  content: "";
+  display: block;
 
-.user-navigation-link:active {
-  color: rgba(0, 0, 0, 0.3);
+  width: 12px;
+  height: 12px;
+
+  background-image: url("../img/cart.svg");
+  background-repeat: no-repeat;
 }
 
 .nav-list {
@@ -186,6 +249,33 @@
   color: #464646;
 }
 
+.button {
+  display: block;
+  width: 220px;
+  height: 40px;
+  border: 1px solid red;
+
+  background: linear-gradient(to bottom, transparent 0%, transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%, transparent 100%);
+
+  font-family: "Gilroy", "Calibri", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 2.15px;
+  font-weight: 800;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.button:hover,
+.button:focus {
+  background: #f0c52e;
+}
+
+.button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 dt {
   font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 36px;
@@ -222,6 +312,21 @@ dd {
   letter-spacing: 0.18px;
   font-weight: 800;
   color: #000000;
+}
+
+.popular-icon-wrapper {
+  width: 160px;
+  height: 160px;
+  background-color: rgba(240, 197, 46, 0.5);
+}
+
+.popular-icon-wrapper:hover,
+.popular-icon-wrapper:focus {
+  background-color:#f0c52e;
+}
+
+.popular-icon-wrapper:active .popular-icon {
+  opacity: 0.3;
 }
 
 .service-list {
@@ -547,20 +652,37 @@ dd {
 }
 
 .footer-social-link {
+  display: block;
+  width: 32px;
+  height: 32px;
   text-decoration: none;
 }
 
-.footer-social-icon  {
-  fill: rgba(255, 255, 255, 0.3);
+.footer-social-link::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/facebook.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
 }
 
-.footer-social-icon:hover path,
-.footer-social-icon:focus path {
-  fill: rgba(255, 255, 255, 0.6);
+.instagram::before {
+  background-image: url("../img/instagram.svg");
 }
 
-.footer-social-icon:active path {
-  fill: rgba(255, 255, 255, 0.1);
+.twitter::before {
+  background-image: url("../img/twitter.svg");
+}
+
+.footer-social-link:hover::before,
+.footer-social-link:focus::before {
+  opacity: 0.6;
+}
+
+.footer-social-link:active::before {
+  opacity: 0.1;
 }
 
 .academy-link {
