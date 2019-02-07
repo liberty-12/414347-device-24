@@ -232,6 +232,34 @@ a {
 
 
 /* INDEX.HTML */
+.button {
+  display: block;
+  width: 220px;
+  height: 40px;
+
+  border: 1px solid red;
+
+  background: linear-gradient(to bottom, transparent 0%, transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%, transparent 100%);
+
+  font-family: "Gilroy", "Calibri", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 2.15px;
+  font-weight: 800;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.button:hover,
+.button:focus {
+  background: #f0c52e;
+}
+
+.button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .slider-list {
   list-style: none;
   margin: 0;
@@ -256,31 +284,8 @@ a {
   color: #464646;
 }
 
-.button {
-  display: block;
+.slider-button {
   width: 220px;
-  height: 40px;
-  border: 1px solid red;
-
-  background: linear-gradient(to bottom, transparent 0%, transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%, transparent 100%);
-
-  font-family: "Gilroy", "Calibri", sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 2.15px;
-  font-weight: 800;
-  color: #000000;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.button:hover,
-.button:focus {
-  background: #f0c52e;
-}
-
-.button:active {
-  color: rgba(0, 0, 0, 0.3);
 }
 
 dt {
@@ -342,12 +347,22 @@ dd {
 }
 
 .service-item-link {
+  width: 160px;
+
   font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 2.15px;
   font-weight: 800;
   color: #000000;
+}
+
+.service-item-link:active {
+  width: 278px;
+
+  background-color: #000000;
+
+  color: #f7e184;
 }
 
 .service-description-list {
