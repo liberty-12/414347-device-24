@@ -12,6 +12,14 @@
   src: url("gilroyextrabold.woff2") format ("woff2"), url("gilroyextrabold.woff") format ("woff");
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -221,8 +229,9 @@ a {
   display: block;
   width: 220px;
   height: 40px;
-  border: 1px solid red;
+
   background: linear-gradient(to bottom, transparent 0%, transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%, transparent 100%);
+
   font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -482,6 +491,12 @@ dd {
 
 .close-button:active {
   opacity: 0.3;
+}
+
+.popup-button {
+  width: 200px;
+
+  border: none;
 }
 
 /* CATALOG.HTML */
