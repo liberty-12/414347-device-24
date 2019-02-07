@@ -455,6 +455,58 @@ dd {
   color: rgba(70, 70, 70, 0.4);
 }
 
+.contact-popup-form input,
+.contact-popup-form textarea {
+  width: 360px;
+  height: 50px;
+
+  border: none;
+  background-color: rgba(230, 230, 230, 0.5);
+}
+
+.contact-popup-form textarea {
+  width: 760px;
+  height: 156px;
+}
+
+.contact-popup-form input:hover,
+.contact-popup-form textarea:hover {
+  background-color: rgba(230, 230, 230, 0.8);
+}
+
+.contact-popup-form input:focus,
+.contact-popup-form textarea:focus {
+  background-color: transparent;
+  border: 3px solid rgba(240, 197, 46, 0.5);
+  color: #464646;
+}
+
+.contact-popup-form input:invalid,
+.contact-popup-form textarea:invalid {
+  background-color: rgba(237, 181, 181, 0.5);
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.close-button {
+  width: 55px;
+  height: 55px;
+
+  border: none;
+  background-image: url("../img/modal-close.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  opacity: 0.5;
+}
+
+.close-button:hover,
+.close-button:focus {
+  opacity: 1;
+}
+
+.close-button:active {
+  opacity: 0.3;
+}
+
 /* CATALOG.HTML */
 .main-heading {
   font-family: "Gilroy", "Calibri", sans-serif;
