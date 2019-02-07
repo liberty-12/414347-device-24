@@ -437,6 +437,24 @@ dd {
   color: #464646;
 }
 
+/*INDEX POPUPS*/
+.contact-popup-form label {
+  font-family: "Gilroy", "Calibri", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.contact-popup-form input::placeholder,
+.contact-popup-form textarea::placeholder {
+  font-family: "Open Sans", "Calibri", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: rgba(70, 70, 70, 0.4);
+}
+
 /* CATALOG.HTML */
 .main-heading {
   font-family: "Gilroy", "Calibri", sans-serif;
