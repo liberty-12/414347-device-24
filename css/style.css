@@ -56,9 +56,7 @@ a {
 .main-header {
   display: flex;
   flex-direction: column;
-
   padding: 0 60px;
-
   background-color: rgba(240, 197, 46, 0.5);
 }
 
@@ -77,9 +75,7 @@ a {
 
 .user-navigation {
   display: flex;
-
   margin-bottom: 45px;
-
   list-style: none;
   margin: 0;
   padding: 0;
@@ -114,7 +110,6 @@ a {
 
 .search-form {
   padding-right: 100px;
-
   width: 440px;
 }
 
@@ -178,7 +173,6 @@ a {
 
 .user-navigation li:nth-child(2) {
   padding-right: 20px;
-
   width: 260px;
 }
 
@@ -220,7 +214,6 @@ a {
 
 .nav-list {
   display: flex;
-
   list-style: none;
   margin: 0;
   padding: 0;
@@ -272,9 +265,7 @@ a {
   display: block;
   width: 220px;
   height: 40px;
-
   background: linear-gradient(to bottom, transparent 0%, transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%, transparent 100%);
-
   font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -298,6 +289,21 @@ a {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.slider-item {
+  display: flex;
+}
+
+.slider-img-wrapper {
+  width: 560px;
+}
+
+.slider-description {
+  display: flex;
+  flex-direction: column;
+  margin-right: 60px;
+  width: 500px;
 }
 
 .slider-item h2 {
@@ -341,6 +347,7 @@ dd {
 }
 
 .popular-list {
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -374,10 +381,16 @@ dd {
   opacity: 0.3;
 }
 
+.services {
+  display: flex;
+}
+
 .service-list {
-  list-style: none;
   margin: 0;
+  margin-right: 120px;
   padding: 0;
+  width: 280px;
+  list-style: none;
 }
 
 .service-item-link {
@@ -397,12 +410,14 @@ dd {
 }
 
 .service-description-list {
-  list-style: none;
   margin: 0;
   padding: 0;
+  width: 460px;
+  list-style: none;
 }
 
 .service-description-item h2 {
+  margin: 0;
   font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 47px;
   line-height: 48px;
@@ -421,9 +436,20 @@ dd {
 }
 
 .logotype-list {
+  display: flex;
+
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.info {
+  margin-right: 120px;
+  width: 480px;
 }
 
 .info h2 {
@@ -449,6 +475,10 @@ dd {
   line-height: 40px;
   font-weight: 800;
   color: #000000;
+}
+
+.contacts {
+  width: 560px;
 }
 
 .contacts h2 {
@@ -515,6 +545,7 @@ dd {
 .contact-popup-form textarea:invalid {
   background-color: rgba(237, 181, 181, 0.5);
   color: rgba(70, 70, 70, 0.4);
+  border: none;
 }
 
 .close-button {
@@ -538,7 +569,6 @@ dd {
 
 .popup-button {
   width: 200px;
-
   border: none;
 }
 
@@ -676,10 +706,8 @@ dd {
 .order-item-link::before {
   content: "";
   display: block;
-
   width: 11px;
   height: 10px;
-
   background-image: url("../img/icon-dir.svg");
   background-repeat: no-repeat;
   opacity: 0.2;
@@ -738,9 +766,7 @@ dd {
 
 .pages-item-link {
   display: block;
-
   height: 70px;
-
   font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 16px;
   line-height: 24px;
