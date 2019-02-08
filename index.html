@@ -70,7 +70,7 @@
       </nav>
     </header>
 
-    <main class="main-container">
+    <main class="main">
       <h1 class="visually-hidden">Главная страница</h1>
       <section class="slider">
         <h2 class="visually-hidden">Слайдер</h2>
@@ -357,6 +357,8 @@
 
   <section class="contact-popup hidden">
     <form class="contact-popup-form" method="post" action="https://htmlacademy.ru/">
+      <button class="close-button" aria-label="Закрыть форму"></button>
+
       <label for="name">Ваше имя:</label>
       <input type="text" name="name" id="name" placeholder="Имя Фамилия" />
 
@@ -367,7 +369,6 @@
       <textarea name="text" id="text" placeholder="В свободной форме"></textarea>
 
       <button class="button popup-button" type="submit">Отправить</button>
-      <button class="close-button" aria-label="Закрыть форму"></button>
     </form>
   </section>
 </body>
