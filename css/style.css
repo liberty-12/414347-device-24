@@ -794,11 +794,27 @@ dd {
 }
 
 /* FOOTER */
-.main-footer-wrapper {
+.main-footer {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 65px;
+  padding-bottom: 65px;
+
   background-color: #464646;
 }
 
+.main-footer .main-container {
+  padding-top: 0;
+}
+
+.footer-block {
+  display: flex;
+}
+
 .main-footer .main-logo {
+  width: 163px;
+  height: 35px;
   fill: #ffc600;
 }
 
@@ -809,6 +825,10 @@ dd {
 
 .main-footer .main-logo:active {
   fill: rgba(255, 198, 0, 0.3);
+}
+
+.main-footer .user-navigation {
+  margin-left: auto;
 }
 
 .main-footer .user-navigation-link {
@@ -824,7 +844,21 @@ dd {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.main-footer .user-icon,
+.main-footer .user-navigation li:first-child {
+  padding-right: 20px;
+  width: 260px;
+}
+
+.user-navigation li:nth-child(2),
+.user-navigation li:last-child {
+  width: 100px;
+}
+
+.user-navigation li:nth-child(2) {
+  padding-right: 20px;
+}
+
+/* .main-footer .user-icon,
 .main-footer .compare-icon,
 .main-footer .cart-icon {
   fill: #ffc600;
@@ -843,6 +877,15 @@ dd {
 .main-footer .compare-icon:active,
 .main-footer .cart-icon:active {
   fill: rgba(255, 198, 0, 0.3);
+} */
+
+.footer-block:nth-child(2) {
+  margin-bottom: 65px;
+}
+
+.address-wrapper {
+  margin-right: auto;
+  width: 260px;
 }
 
 .address {
@@ -854,6 +897,10 @@ dd {
 }
 
 .footer-nav-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 440px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -872,6 +919,11 @@ dd {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.phone-number-wrapper {
+  margin-left: auto;
+  width: 180px;
+}
+
 .phone-number {
   font-family: "Open Sans", "Calibri", sans-serif;
   font-size: 15px;
@@ -884,10 +936,22 @@ dd {
   color: #ffffff;
 }
 
+.footer-block:last-child {
+  justify-content: flex-end;
+}
+
+.footer-social {
+  width: 160px;
+  margin-right: 475px;
+}
+
 .footer-social-list {
-  list-style: none;
+  display: flex;
+  justify-content: space-around;
   margin: 0;
+
   padding: 0;
+  list-style: none;
 }
 
 .footer-social-link {
