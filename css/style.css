@@ -437,7 +437,6 @@ dd {
 
 .logotype-list {
   display: flex;
-
   list-style: none;
   margin: 0;
   padding: 0;
@@ -583,9 +582,10 @@ dd {
 }
 
 .breadcrumbs-list {
-  list-style: none;
+  display: flex;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .breadcrumbs-link {
@@ -606,6 +606,15 @@ dd {
   color: rgba(0, 0, 0, 0.1);
 }
 
+.main-content-container {
+  display: flex;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .form h2 {
   font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 16px;
@@ -622,6 +631,10 @@ dd {
   padding: 0;
 }
 
+.range-div {
+  width: 200px;
+}
+
 .range-div label {
   font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 18px;
@@ -631,6 +644,11 @@ dd {
   color: #000000;
 }
 
+.color {
+  width: 200px;
+  border: none;
+}
+
 .color legend {
   font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 18px;
@@ -638,6 +656,11 @@ dd {
   letter-spacing: 0.18px;
   font-weight: 800;
   color: #000000;
+}
+
+.bluetooth {
+  width: 200px;
+  border: none;
 }
 
 .bluetooth legend {
@@ -658,7 +681,19 @@ dd {
   color: #000000;
 }
 
+.filter-button {
+  width: 200px;
+  border: none;
+}
+
+.sort {
+  display: flex;
+  align-items: center;
+}
+
 .sort h2 {
+  margin-right: 20px;
+  width: 160px;
   font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -669,6 +704,8 @@ dd {
 }
 
 .sort-list {
+  display: flex;
+  align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -692,6 +729,8 @@ dd {
 }
 
 .order-list {
+  display: flex;
+  align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -727,9 +766,16 @@ dd {
 }
 
 .catalog-list {
-  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 760px;
   margin: 0;
   padding: 0;
+  list-style: none;
+}
+
+.catalog-item:nth-child(2n-1) {
+  margin-right: 40px;
 }
 
 .catalog-item-description a {
@@ -755,13 +801,15 @@ dd {
 }
 
 .pages {
+  width: 760px;
   background-color: rgba(0, 0, 0, 0.08);
 }
 
 .pages-list {
-  list-style: none;
+  display: flex;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .pages-item-link {
@@ -797,10 +845,8 @@ dd {
 .main-footer {
   display: flex;
   flex-direction: column;
-
   padding-top: 65px;
   padding-bottom: 65px;
-
   background-color: #464646;
 }
 
@@ -878,7 +924,6 @@ dd {
 .main-footer .cart-icon:active {
   fill: rgba(255, 198, 0, 0.3);
 } */
-
 .footer-block:nth-child(2) {
   margin-bottom: 65px;
 }
@@ -949,7 +994,6 @@ dd {
   display: flex;
   justify-content: space-around;
   margin: 0;
-
   padding: 0;
   list-style: none;
 }
