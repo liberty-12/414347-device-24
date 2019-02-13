@@ -771,6 +771,28 @@ a {
   right: 22px;
 }
 
+.contact-popup {
+  display: inline-block;
+  position: relative;
+  box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
+}
+
+.contact-popup .close-button {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+}
+
+.contact-popup-form {
+  display: flex;
+  flex-direction: column;
+  padding: 90px 100px;
+}
+
+.contact-popup-container {
+  display: flex;
+}
+
 .contact-popup-form label {
   font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 18px;
