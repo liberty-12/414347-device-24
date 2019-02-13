@@ -41,25 +41,25 @@
       <nav class="main-nav">
         <ul class="nav-list">
           <li class="nav-item">
-            <a class="nav-link catalog" href="#">Каталог товаров</a>
-            <ul class="catalog-list">
-              <li class="catalog-item">
-                <a class="catalog-link" href="#">Виртуальная реальность</a>
+            <a class="nav-link nav-catalog" href="#">Каталог товаров</a>
+            <ul class="nav-catalog-list">
+              <li class="nav-catalog-item">
+                <a class="nav-catalog-link" href="#">Виртуальная реальность</a>
               </li>
-              <li class="catalog-item">
-                <a class="catalog-link" href="catalog.html">Моноподы для селфи</a>
+              <li class="nav-catalog-item">
+                <a class="nav-catalog-link" href="catalog.html">Моноподы для селфи</a>
               </li>
-              <li class="catalog-item">
-                <a class="catalog-link" href="#">Экшн-камеры</a>
+              <li class="nav-catalog-item">
+                <a class="nav-catalog-link" href="#">Экшн-камеры</a>
               </li>
-              <li class="catalog-item">
-                <a class="catalog-link" href="#">Фитнес-браслеты</a>
+              <li class="nav-catalog-item">
+                <a class="nav-catalog-link" href="#">Фитнес-браслеты</a>
               </li>
-              <li class="catalog-item">
-                <a class="catalog-link" href="#">Умные часы</a>
+              <li class="nav-catalog-item">
+                <a class="nav-catalog-link" href="#">Умные часы</a>
               </li>
-              <li class="catalog-item">
-                <a class="catalog-link" href="#">Квадрокоптеры</a>
+              <li class="nav-catalog-item">
+                <a class="nav-catalog-link" href="#">Квадрокоптеры</a>
               </li>
             </ul>
           </li>
@@ -86,13 +86,19 @@
                 Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
               </p>
               <a class="button slider-button" href="#">Подробнее</a>
-              <dl>
-                <dt>8,5 м</dt>
-                <dd>Длина палки</dd>
-                <dt>5 кг</dt>
-                <dd>Вес палки</dd>
-                <dt>Карбон</dt>
-                <dd>Материал</dd>
+              <dl class="terms-list">
+                <div class="term-item">
+                  <dt class="term">8,5 м</dt>
+                  <dd class="term-description">Длина палки</dd>
+                </div>
+                <div class="term-item">
+                  <dt class="term">5 кг</dt>
+                  <dd class="term-description">Вес палки</dd>
+                </div>
+                <div class="term-item">
+                  <dt class="term">Карбон</dt>
+                  <dd class="term-description">Материал</dd>
+                </div>
               </dl>
             </div>
           </li>
@@ -107,9 +113,11 @@
                 не пропускать занятия и соблюдать диету.
               </p>
               <a class="button slider-button" href="#">Подробнее</a>
-              <dl>
-                <dt>48 часов</dt>
-                <dd>Без подзарядки</dd>
+              <dl class="terms-list">
+                <div class="term-item">
+                  <dt class="term">48 часов</dt>
+                  <dd class="term-description">Без подзарядки</dd>
+                </div>
               </dl>
             </div>
           </li>
@@ -124,11 +132,15 @@
                 мощным лазером, замаскированным под стандартную камеру.
               </p>
               <a class="button slider-button" href="#">Подробнее</a>
-              <dl>
-                <dt>800 м</dt>
-                <dd>Дальность полета</dd>
-                <dt>50 м</dt>
-                <dd>Радиус поражения</dd>
+              <dl class="terms-list">
+                <div class="term-item">
+                  <dt class="term">800 м</dt>
+                  <dd class="term-description">Дальность полета</dd>
+                </div>
+                <div class="term-item">
+                  <dt class="term">50 м</dt>
+                  <dd class="term-description">Радиус поражения</dd>
+                </div>
               </dl>
             </div>
           </li>
@@ -241,7 +253,7 @@
             <li class="info-item">Автотрейдинг</li>
             <li class="info-item">ЖелДорЭкспедиция</li>
           </ul>
-          <a class="button" href="#">Подробнее о нас</a>
+          <a class="button info-button" href="#">Подробнее о нас</a>
         </section>
         <section class="contacts">
           <h2>Контакты</h2>
@@ -251,7 +263,7 @@
             Всякое бывает.
           </p>
           <a href="#" class="map"><img src="img/map.jpg" width="560" height="222" alt="Карта" /></a>
-          <a class="button feedback-button">Напишите нам</a>
+          <a class="button contacts-button">Напишите нам</a>
         </section>
       </div>
     </main>
