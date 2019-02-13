@@ -732,8 +732,43 @@ a {
 }
 
 /*INDEX POPUPS*/
-.map-popup {
+.close-button {
+  width: 55px;
+  height: 55px;
+  border: none;
+  background-image: url("../img/modal-close.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  opacity: 0.5;
+}
 
+.close-button:hover,
+.close-button:focus {
+  opacity: 1;
+}
+
+.close-button:active {
+  opacity: 0.3;
+}
+
+.map-popup {
+  display: inline-block;
+  position: relative;
+  /* position: absolute;
+  right: 240px;
+  bottom: 384px; */
+}
+
+.map-iframe {
+  width: 960px;
+  height: 559px;
+  box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
+}
+
+.map-popup .close-button {
+  position: absolute;
+  top: 22px;
+  right: 22px;
 }
 
 .contact-popup-form label {
@@ -783,25 +818,6 @@ a {
   background-color: rgba(237, 181, 181, 0.5);
   color: rgba(70, 70, 70, 0.4);
   border: none;
-}
-
-.close-button {
-  width: 55px;
-  height: 55px;
-  border: none;
-  background-image: url("../img/modal-close.svg");
-  background-repeat: no-repeat;
-  background-color: transparent;
-  opacity: 0.5;
-}
-
-.close-button:hover,
-.close-button:focus {
-  opacity: 1;
-}
-
-.close-button:active {
-  opacity: 0.3;
 }
 
 .popup-button {
