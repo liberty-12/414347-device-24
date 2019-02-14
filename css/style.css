@@ -799,14 +799,28 @@ input[type="radio"].visually-hidden {
 .contact-popup-form {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   padding: 90px 100px;
+  padding-bottom: 0;
 }
 
 .contact-popup-container {
   display: flex;
+  margin-bottom: 35px;
+}
+
+.contact-popup-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-popup-input:first-child {
+  margin-right: 40px;
 }
 
 .contact-popup-form label {
+  display: block;
+  margin-bottom: 10px;
   font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -816,6 +830,8 @@ input[type="radio"].visually-hidden {
 
 .contact-popup-form input::placeholder,
 .contact-popup-form textarea::placeholder {
+  padding: 16px 0;
+  padding-left: 20px;
   font-family: "Open Sans", "Calibri", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -825,13 +841,15 @@ input[type="radio"].visually-hidden {
 
 .contact-popup-form input,
 .contact-popup-form textarea {
+  padding: 16px 0;
+  padding-left: 20px;
   width: 360px;
-  height: 50px;
   border: none;
   background-color: rgba(230, 230, 230, 0.5);
 }
 
 .contact-popup-form textarea {
+  margin-bottom: 40px;
   width: 760px;
   height: 156px;
 }
@@ -856,7 +874,7 @@ input[type="radio"].visually-hidden {
 }
 
 .popup-button {
-  /* width: 200px; */
+  margin-bottom: 78px;
   border: none;
 }
 
