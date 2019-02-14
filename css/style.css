@@ -287,6 +287,7 @@ input[type="radio"].visually-hidden {
 
 .nav-list {
   display: flex;
+  flex-wrap: wrap;
   position: relative;
   margin: 0;
   margin-bottom: 160px;
