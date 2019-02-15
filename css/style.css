@@ -142,7 +142,6 @@ input[type="radio"].visually-hidden {
   padding-left: 40px;
   padding-bottom: 15px;
   width: 440px;
-  height: 30px;
   font-family: "Open Sans", "Calibri", sans-serif;
   font-size: 15px;
   line-height: 30px;
@@ -177,6 +176,7 @@ input[type="radio"].visually-hidden {
 
 .search-form-input:focus {
   border-bottom: 2px solid black;
+  /* width: 440px; */
 }
 
 .search-form-input:focus .search-form-button {
@@ -244,6 +244,18 @@ input[type="radio"].visually-hidden {
   height: 12px;
   background-image: url("../img/user.svg");
   background-repeat: no-repeat;
+}
+
+.catalog-page .main-header .profile-link {
+  margin-right: 15px;
+}
+
+.catalog-page .main-header .login-link {
+  margin-right: 50px;
+}
+
+.catalog-page .main-header .user-navigation-item:nth-child(2) {
+  margin-right: 0;
 }
 
 .compare-link {
@@ -1204,20 +1216,6 @@ input[type="radio"].visually-hidden {
 .main-footer .user-navigation-item:nth-child(2) {
   margin-right: 35px;
 }
-
-/* .main-footer .user-navigation-item:first-child {
-  padding-right: 20px;
-  width: 260px;
-}
-
-.main-footer .user-navigation-item:nth-child(2),
-.main-footer .user-navigation-item:last-child {
-  width: 100px;
-}
-
-.main-footer .user-navigation-item:nth-child(2) {
-  padding-right: 20px;
-} */
 
 .main-footer .user-icon,
 .main-footer .compare-icon,
