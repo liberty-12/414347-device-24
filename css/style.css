@@ -960,6 +960,11 @@ input[type="radio"].visually-hidden {
   flex-direction: column;
 }
 
+.form {
+  margin-right: 70px;
+  background-color: #efefef;
+}
+
 .form h2 {
   font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 16px;
@@ -968,6 +973,10 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   font-weight: 800;
   color: #000000;
+}
+
+.filter {
+  margin-right: 68px;
 }
 
 .filter-list {
@@ -989,26 +998,16 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.color {
-  width: 200px;
-  border: none;
-}
-
-.color legend {
-  font-family: "Gilroy", "Calibri", sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 0.18px;
-  font-weight: 800;
-  color: #000000;
-}
-
+.color,
 .bluetooth {
+  margin: 0;
+  padding: 0;
   width: 200px;
   border: none;
 }
 
-.bluetooth legend {
+.color legend,
+.bluetooth legend  {
   font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -1034,11 +1033,14 @@ input[type="radio"].visually-hidden {
 .sort {
   display: flex;
   align-items: center;
+  margin-bottom: 70px;
+  background-color: rgba(0, 0, 0, 0.08);
 }
 
 .sort h2 {
+  margin:0;
   margin-right: 20px;
-  width: 160px;
+  padding: 23px 0;
   font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -1051,9 +1053,14 @@ input[type="radio"].visually-hidden {
 .sort-list {
   display: flex;
   align-items: center;
-  list-style: none;
   margin: 0;
+  margin-right: auto;
   padding: 0;
+  list-style: none;
+}
+
+.sort-item {
+  margin-right: 28px;
 }
 
 .sort-item-link {
@@ -1076,9 +1083,10 @@ input[type="radio"].visually-hidden {
 .order-list {
   display: flex;
   align-items: center;
-  list-style: none;
   margin: 0;
+  margin-right:
   padding: 0;
+  list-style: none;
 }
 
 .order-item-link {
@@ -1095,6 +1103,14 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/icon-dir.svg");
   background-repeat: no-repeat;
   opacity: 0.2;
+}
+
+.order-item-up {
+  margin-right: 19px;
+}
+
+.order-item-down .order-item-link::before {
+  opacity: 1;
 }
 
 .order-item-up .order-item-link::before {
