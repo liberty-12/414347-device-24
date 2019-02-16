@@ -401,7 +401,31 @@ input[type="radio"].visually-hidden {
 }
 
 .slider {
+  position: relative;
   margin-bottom: 100px;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 135px;
+  right: 95px;
+  z-index: 20;
+
+  font-size: 0;
+}
+
+.slider-controls label {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 21px;
+
+  vertical-align: top;
+
+  background-color: transparent;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .slider-list {
