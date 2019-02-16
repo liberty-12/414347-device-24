@@ -958,6 +958,7 @@ input[type="radio"].visually-hidden {
 .content-container {
   display: flex;
   flex-direction: column;
+  margin-bottom: 77px;
 }
 
 .form {
@@ -1139,6 +1140,28 @@ input[type="radio"].visually-hidden {
   margin-right: 40px;
 }
 
+.catalog-item-link {
+  display: block;
+  margin-bottom: 35px;
+}
+
+.catalog-description-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.catalog-item-description {
+  margin: 0;
+  margin-right: auto;
+  padding: 0;
+  font-family: "Gilroy", "Calibri", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  font-weight: 800;
+  color: #000000;
+}
+
 .catalog-item-description a {
   font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 18px;
@@ -1161,39 +1184,78 @@ input[type="radio"].visually-hidden {
   /* width: 200px; */
 }
 
+.catalog-compare-link {
+  font-family: "Open Sans", "Calibri", sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 300;
+  letter-spacing: 0.13px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.catalog-compare-link:hover,
+.catalog-compare-link:focus {
+  color: #000000;
+}
+
+.catalog-compare-link:active {
+  color: rgba(0, 0, 0, 0.2);;
+}
+
 .pages {
-  width: 760px;
   background-color: rgba(0, 0, 0, 0.08);
 }
 
 .pages-list {
   display: flex;
+  justify-content: center;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .pages-item-link {
+  padding: 23px 15px;
   display: block;
-  height: 70px;
   font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.91px;
   font-weight: 800;
   text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.pages-item-link:hover,
+.pages-item-link:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.pages-item-link:active,
+.current-page {
   color: #000000;
 }
 
-.pages-item:first-child,
+.pages-item:first-child .pages-item-link,
+.pages-item:last-child .pages-item-link {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.pages-item:first-child {
+  margin-right: auto;
+}
+
 .pages-item:last-child {
-  width: 126px;
+  margin-left: auto;
 }
 
 .pages-item:first-child:hover,
 .pages-item:first-child:focus,
 .pages-item:last-child:hover,
 .pages-item:last-child:focus {
+  cursor: pointer;
   background-color: rgba(0, 0, 0, 0.08);
 }
 
