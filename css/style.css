@@ -313,6 +313,7 @@ input[type="radio"].visually-hidden {
 .nav-catalog {
   position: relative;
   padding-right: 40px;
+  padding-bottom: 169px;
   margin-right: 270px;
 }
 
@@ -327,16 +328,29 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
 }
 
+.nav-item:first-child {
+  position: relative;
+}
+
 .nav-catalog-list {
   display: none;
-  /* display: flex;
+  position: absolute;
+  top: 37px;
+  left: 0;
+  flex-direction: column;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  list-style: none; */
+  list-style: none;
+}
+
+.nav-catalog:hover ~ .nav-catalog-list {
+  display: flex;
 }
 
 .nav-catalog-link {
+  display: block;
+  margin-bottom: 20px;
   font-family: "Open Sans", "Calibri", sans-serif;
   font-size: 15px;
   line-height: 30px;
