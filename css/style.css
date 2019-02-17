@@ -556,18 +556,6 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
-.service-item::before {
-  display: none;
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 120px;
-  height: 40px;
-  background-color: #000000;
-  color: #f7e184;
-}
-
 .service-item:first-child {
   margin-top: 80px;
   margin-bottom: 25px;
@@ -588,13 +576,25 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.service-item-link:active {
+.service-item-link::before {
+  display: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -100px;
+  width: 120px;
+  height: 40px;
   background-color: #000000;
   color: #f7e184;
 }
 
-.service-item-link:active ~ .service-item::before {
+.service-item-link:hover ~ .service-item-link::before {
   display: block;
+}
+
+.service-item-link:active {
+  background-color: #000000;
+  color: #f7e184;
 }
 
 .service-description-list {
