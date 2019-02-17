@@ -562,6 +562,7 @@ input[type="radio"].visually-hidden {
 }
 
 .service-item-link {
+  position: relative;
   width: 180px;
   font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 18px;
@@ -571,11 +572,16 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.service-item-link:active {
+/* .service-item-link:active ~ .service-item-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 278px;
+  height: 40px;
   background-color: #000000;
   color: #f7e184;
-}
+} */
 
 .service-description-list {
   margin: 0;
