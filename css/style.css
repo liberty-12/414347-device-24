@@ -593,22 +593,24 @@ input[type="radio"].visually-hidden {
   content: "";
   display: block;
   position: absolute;
-  width: 160px;
-  height: 160px;
   top: 0;
   left: 0;
+  width: 160px;
+  height: 160px;
   background-color: rgba(240, 197, 46, 0.5);
 }
 
 .popular-icon {
   display: block;
-  position: relative;
-  margin: auto;
+  position: absolute;
+
 
   z-index: 10;
 }
 
 .popular-link span {
+  display: block;
+  padding-top: 150px;
   font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -630,6 +632,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   margin: 0;
   margin-right: 120px;
+  margin-top: 80px;
   padding: 0;
   width: 280px;
   list-style: none;
@@ -638,24 +641,17 @@ input[type="radio"].visually-hidden {
 .service-list::after {
   content: "";
   position: absolute;
+  top: -80px;
+  left: 278px;
   width: 7px;
   height: 319px;
-  top: 0;
-  left: 278px;
   background-color: #000000;
 }
 
 .service-item {
   position: relative;
-}
-
-.service-item:first-child {
-  margin-top: 80px;
   margin-bottom: 25px;
-}
-
-.service-item:nth-child(2) {
-  margin-bottom: 25px;
+  width: 100%;
 }
 
 .service-item-link {
@@ -669,25 +665,17 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.service-item-link::before {
-  display: none;
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -100px;
-  width: 120px;
-  height: 40px;
+.current-service-item .service-item-link:active,
+.current-service-item .service-item-link,
+.service-item:active .service-item-link {
+  background: none;
   background-color: #000000;
   color: #f7e184;
 }
 
-.service-item-link:hover ~ .service-item-link::before {
-  display: block;
-}
-
-.service-item-link:active {
+.current-service-item,
+.service-item:active {
   background-color: #000000;
-  color: #f7e184;
 }
 
 .service-description-list {
