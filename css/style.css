@@ -966,7 +966,7 @@ input[type="radio"].visually-hidden {
 .contact-popup-form input:focus,
 .contact-popup-form textarea:focus {
   background-color: transparent;
-  border: 3px solid rgba(240, 197, 46, 0.5);
+  box-shadow: 0 0 0 3px rgba(240, 197, 46, 0.5);
   color: #464646;
 }
 
