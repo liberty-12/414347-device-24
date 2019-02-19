@@ -231,15 +231,15 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
 }
 
-.catalog-page .main-header .profile-link {
+.catalog-page .profile-link {
   margin-right: 15px;
 }
 
-.catalog-page .main-header .login-link {
+.catalog-page .login-link {
   margin-right: 50px;
 }
 
-.catalog-page .main-header .user-navigation-item:nth-child(2) {
+.catalog-page .user-navigation-item:nth-child(2) {
   margin-right: 0;
 }
 
@@ -565,6 +565,10 @@ input[type="radio"].visually-hidden {
   color: #464646;
 }
 
+.popular {
+  margin-bottom: 80px;
+}
+
 .popular-list {
   display: flex;
   justify-content: space-around;
@@ -576,31 +580,29 @@ input[type="radio"].visually-hidden {
 .popular-link {
   display: block;
   position: relative;
-  width: 160px;
-  height: 160px;
-  background-color: rgba(240, 197, 46, 0.5);
   color: #000000;
 }
 
-.popular-link:hover,
-.popular-link:focus {
-  background-color: #f0c52e;
-}
-
-.popular-link:active ~ .popular-icon {
-  opacity: 0.3;
+.popular-link::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  top: 0;
+  left: 0;
+  background-color: rgba(240, 197, 46, 0.5);
 }
 
 .popular-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: block;
+  position: relative;
+  margin: auto;
+
+  z-index: 10;
 }
 
 .popular-link span {
-  position: absolute;
-  bottom: 0;
   font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -989,6 +991,7 @@ input[type="radio"].visually-hidden {
 /* CATALOG.HTML */
 .catalog-page .main {
   margin-left: 60px;
+  padding-top: 0;
 }
 
 .main-heading {
