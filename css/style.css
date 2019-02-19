@@ -583,6 +583,15 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
+.popular-item {
+  margin-right: 20px;
+  width: 160px;
+}
+
+.popular-item:last-child {
+  margin-right: 0;
+}
+
 .popular-link {
   display: block;
   position: relative;
@@ -604,13 +613,12 @@ input[type="radio"].visually-hidden {
   display: block;
   position: absolute;
 
-
   z-index: 10;
 }
 
 .popular-link span {
   display: block;
-  padding-top: 150px;
+  padding-top: 185px;
   font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -686,7 +694,12 @@ input[type="radio"].visually-hidden {
 }
 
 .service-description-item {
+  display: none;
   position: relative;
+}
+
+.service-description-item:first-child {
+  display: block;
 }
 
 .service-description-item::after {
