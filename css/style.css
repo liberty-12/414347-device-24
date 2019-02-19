@@ -379,7 +379,7 @@ input[type="radio"].visually-hidden {
 /* INDEX.HTML */
 .main {
   position: relative;
-  /* padding-top: 480px; */
+  padding-top: 480px;
 }
 
 .button {
@@ -403,6 +403,11 @@ input[type="radio"].visually-hidden {
 
 .button:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.slider-wrapper {
+  position: absolute;
+  top: -100px;
 }
 
 .slider {
