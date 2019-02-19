@@ -414,11 +414,10 @@ input[type="radio"].visually-hidden {
 
 .slider-controls {
   position: absolute;
-  right: 0;
-  bottom: 104px;
+  bottom: 135px;
+  right: 95px;
   z-index: 100;
 
-  text-align: center;
   font-size: 0;
 }
 
@@ -452,18 +451,8 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 
-.slider-item:nth-child(1) {
-  display: flex;
-}
-
-#product-1:checked ~ .slider-list .slider-item:nth-child(1) {
-  display: flex;
-}
-
-#product-2:checked ~ .slider-list .slider-item:nth-child(2) {
-  display: flex;
-}
-
+#product-1:checked ~ .slider-list .slider-item:nth-child(1),
+#product-2:checked ~ .slider-list .slider-item:nth-child(2),
 #product-3:checked ~ .slider-list .slider-item:nth-child(3) {
   display: flex;
 }
