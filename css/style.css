@@ -379,7 +379,7 @@ input[type="radio"].visually-hidden {
 /* INDEX.HTML */
 .main {
   position: relative;
-  padding-top: 480px;
+  /* padding-top: 480px; */
 }
 
 .button {
@@ -412,6 +412,36 @@ input[type="radio"].visually-hidden {
   margin-left: 60px
 }
 
+.slider-controls {
+  position: absolute;
+  right: 0;
+  bottom: 104px;
+  z-index: 100;
+
+  text-align: center;
+  font-size: 0;
+}
+
+.slider-controls label {
+  position: relative;
+  display: inline-block;
+  margin-right: 21px;
+  z-index: 1;
+
+  width: 12px;
+  height: 12px;
+
+  background-color: transparent;
+  border: 1px solid #000000;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.slider-controls label:last-child {
+  margin-right: 0;
+}
+
 .slider-list {
   margin: 0;
   padding: 0;
@@ -426,13 +456,25 @@ input[type="radio"].visually-hidden {
   display: flex;
 }
 
-/* #product-1:checked ~ .main-container label[for="product-1"],
-#product-2:checked ~ .main-container label[for="product-2"],
-#product-3:checked ~ .main-container label[for="product-3"] {
+#product-1:checked ~ .slider-list .slider-item:nth-child(1) {
+  display: flex;
+}
+
+#product-2:checked ~ .slider-list .slider-item:nth-child(2) {
+  display: flex;
+}
+
+#product-3:checked ~ .slider-list .slider-item:nth-child(3) {
+  display: flex;
+}
+
+#product-1:checked ~ .slider-controls label[for="product-1"],
+#product-2:checked ~ .slider-controls label[for="product-2"],
+#product-3:checked ~ .slider-controls label[for="product-3"] {
   box-shadow: 0 0 0 3px #ffffff inset,
               0 0 0 4px #000000 inset,
               0 0 0 8px #ffffff inset;
-} */
+}
 
 .slider-img-wrapper {
   display: flex;
