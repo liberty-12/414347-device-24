@@ -1138,13 +1138,13 @@ input[type="radio"].visually-hidden {
 }
 
 .sort-wrapper {
+  margin-bottom: 70px;
   background-color: rgba(0, 0, 0, 0.08);
 }
 
 .sort {
   display: flex;
   align-items: center;
-  margin-bottom: 70px;
 }
 
 .sort h2 {
@@ -1245,6 +1245,14 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
+.catalog-item-block {
+  position: relative;
+}
+
+.catalog-item {
+  margin-bottom: 73px;
+}
+
 .catalog-item:nth-child(2n-1) {
   margin-right: 40px;
 }
@@ -1287,6 +1295,23 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0.16px;
   font-weight: 300;
   color: #464646;
+}
+
+.catalog-item-hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 360px;
+  height: 380px;
+  background-color: rgba(238, 238, 238, 0.7);
+}
+
+.catalog-button {
+  margin-bottom: 20px;
 }
 
 .catalog-compare-link {
