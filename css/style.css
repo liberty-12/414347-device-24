@@ -1332,6 +1332,10 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 0.2);;
 }
 
+/* .catalog-item-link:hover ~ .catalog-item-hover {
+  display: flex;
+} */
+
 .pages {
   background-color: rgba(0, 0, 0, 0.08);
 }
@@ -1371,6 +1375,7 @@ input[type="radio"].visually-hidden {
 .pages-item:last-child .pages-item-link {
   padding-left: 30px;
   padding-right: 30px;
+  color: #000000;
 }
 
 .pages-item:first-child {
