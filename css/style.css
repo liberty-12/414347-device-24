@@ -1137,11 +1137,14 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
+.sort-wrapper {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
 .sort {
   display: flex;
   align-items: center;
   margin-bottom: 70px;
-  background-color: rgba(0, 0, 0, 0.08);
 }
 
 .sort h2 {
