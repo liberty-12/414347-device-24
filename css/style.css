@@ -1299,8 +1299,8 @@ input[type="radio"].visually-hidden {
 
 .catalog-item-hover {
   display: flex;
+  padding-top: 170px;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   position: absolute;
   top: 0;
