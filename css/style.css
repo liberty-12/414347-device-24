@@ -610,12 +610,21 @@ input[type="radio"].visually-hidden {
   background-color: rgba(240, 197, 46, 0.5);
 }
 
+.popular-link:hover::before,
+.popular-link:focus::before {
+  background-color: #f0c52e;
+}
+
 .popular-icon {
   position: relative;
   z-index: 5;
   margin: 0 auto;
   margin-top: 43px;
 }
+
+/* .popular-link:active::before ~ .popular-icon {
+  opacity: 0.3;
+} */
 
 .popular-item:first-child .popular-icon {
   margin-top: 52px;
