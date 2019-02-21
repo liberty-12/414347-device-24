@@ -693,13 +693,15 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
+.services-wrapper {
+  background-color: #e5e5e5;
+}
+
 .services {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   margin-bottom: 90px;
-
-  background-color: #e5e5e5;
 }
 
 .service-list {
