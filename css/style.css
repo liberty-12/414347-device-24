@@ -231,6 +231,15 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
 }
 
+.profile-link:hover::before,
+.profile-link:focus::before {
+  opacity: 0.6;
+}
+
+.profile-link:active::before {
+  opacity: 0.3;
+}
+
 .catalog-page .profile-link {
   margin-right: 15px;
 }
@@ -260,6 +269,15 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
 }
 
+.compare-link:hover::before,
+.compare-link:focus::before {
+  opacity: 0.6;
+}
+
+.compare-link:active::before {
+  opacity: 0.3;
+}
+
 .main-header .user-navigation-item:nth-child(3) {
   margin-right: 20px;
 }
@@ -280,6 +298,16 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/cart.svg");
   background-repeat: no-repeat;
 }
+
+.cart-link:hover::before,
+.cart-link:focus::before {
+  opacity: 0.6;
+}
+
+.cart-link:active::before {
+  opacity: 0.3;
+}
+
 
 .nav-list {
   display: flex;
@@ -1502,6 +1530,7 @@ input[type="radio"].visually-hidden {
   margin-right: 10px;
   fill: #ffc600;
 }
+
 
 /* .main-footer .user-icon:hover,
 .main-footer .user-icon:focus,
