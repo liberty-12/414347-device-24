@@ -319,6 +319,10 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
+.catalog-page .nav-list {
+  margin-bottom: 60px;
+}
+
 .nav-link {
   font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 18px;
@@ -362,29 +366,68 @@ input[type="radio"].visually-hidden {
 
 .nav-catalog-list {
   display: none;
-  position: absolute;
-  top: 37px;
-  left: 0;
   flex-direction: column;
   flex-wrap: wrap;
+
+  position: absolute;
+  top: 34px;
+  left: 0;
+  z-index: 5;
+
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* padding: 20px 60px 36px; */
+
+  height: 150px;
+
   list-style: none;
+
+  background-color: #f7e296;
 }
 
-.nav-catalog:hover ~ .nav-catalog-list {
+.nav-catalog-list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60px;
+  z-index: -1;
+
+  width: 1160px;
+  height: 150px;
+
+  background-color: #f7e296;
+}
+
+.nav-catalog:hover ~ .nav-catalog-list,
+.nav-catalog-list:hover {
   display: flex;
 }
 
-.nav-catalog-link {
-  display: block;
+.nav-catalog-item {
   margin-bottom: 20px;
+}
+
+.nav-catalog-item:nth-child(3n+1) {
+    margin-right: 40px;
+}
+
+.nav-catalog-item:nth-child(5) {
+  margin-bottom: 40px;
+}
+
+.nav-catalog-link {
+  display: inline-block;
+
   font-family: "Open Sans", "Calibri", sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
   letter-spacing: 0.15px;
+
   color: #000000;
+
+  cursor: pointer;
 }
 
 .nav-catalog-link:hover,
