@@ -874,6 +874,28 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
+.logotype-item-link {
+  display: block;
+
+  position: relative;
+}
+
+.logotype-item-link img:last-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  opacity: 0;
+}
+
+.logotype-item-link:hover img:first-child {
+  opacity: 0;
+}
+
+.logotype-item-link:hover img:last-child {
+  opacity: 1;
+}
+
 .container {
   display: flex;
 }
