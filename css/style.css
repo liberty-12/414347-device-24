@@ -1140,6 +1140,10 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
+.hidden {
+  display: none;
+}
+
 /* CATALOG.HTML */
 .catalog-page .main {
   margin-left: 60px;
