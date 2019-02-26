@@ -1654,7 +1654,8 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 0.2);;
 }
 
-.catalog-item-link:hover ~ .catalog-item-hover {
+.catalog-item-link:hover ~ .catalog-item-hover,
+.catalog-item-hover:hover {
   display: flex;
 }
 
