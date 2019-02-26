@@ -1781,28 +1781,20 @@ input[type="radio"].visually-hidden {
   margin-right: 35px;
 }
 
-.main-footer .user-icon,
-.main-footer .compare-icon,
-.main-footer .cart-icon {
+.user-navigation-icon {
   margin-right: 10px;
   fill: #ffc600;
 }
 
 
-/* .main-footer .user-icon:hover,
-.main-footer .user-icon:focus,
-.main-footer .compare-icon:hover,
-.main-footer .compare-icon:focus,
-.main-footer .cart-icon:hover,
-.main-footer .cart-icon:focus {
-  fill: rgba(255, 198, 0, 0.6);
+.user-navigation-link:hover .user-navigation-icon,
+.user-navigation-link:focus .user-navigation-icon {
+  opacity: 0.6;
 }
 
-.main-footer .user-icon:active,
-.main-footer .compare-icon:active,
-.main-footer .cart-icon:active {
-  fill: rgba(255, 198, 0, 0.3);
-} */
+.user-navigation-link:active .user-navigation-icon {
+  opacity: 0.3;
+}
 
 .footer-block:nth-child(2) {
   margin-bottom: 65px;
