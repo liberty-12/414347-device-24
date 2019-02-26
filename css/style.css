@@ -1019,7 +1019,12 @@ input[type="radio"].visually-hidden {
 
 .map-popup {
   display: inline-block;
-  position: relative;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
 }
 
 .map-iframe {
@@ -1036,7 +1041,14 @@ input[type="radio"].visually-hidden {
 
 .contact-popup {
   display: inline-block;
-  position: relative;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+
+  background-color: #ffffff;
   box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
 }
 
