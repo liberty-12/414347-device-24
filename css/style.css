@@ -957,7 +957,7 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 
-.service-description-item:first-child {
+.service-description-item:nth-child(2) {
   display: block;
 }
 
@@ -980,8 +980,8 @@ input[type="radio"].visually-hidden {
 }
 
 .service-description-item:nth-child(2)::after {
-  top: 0;
-  right: 0;
+  top: -12px;
+  right: -254px;
 
   width: 171px;
   height: 195px;
