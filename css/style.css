@@ -972,7 +972,7 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 
-.service-description-item:nth-child(2) {
+.service-description-item:nth-child(3) {
   display: block;
 }
 
@@ -1005,8 +1005,8 @@ input[type="radio"].visually-hidden {
 }
 
 .service-description-item:last-child::after {
-  top: 0;
-  right: 0;
+  top: -12px;
+  right: -230px;
 
   width: 156px;
   height: 188px;
