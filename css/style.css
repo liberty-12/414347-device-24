@@ -442,7 +442,7 @@ input[type="radio"].visually-hidden {
 
   margin: 0;
   padding: 0;
-  /* padding: 20px 60px 36px; */
+  padding-top: 14px;
 
   background-color: #f7e296;
 
@@ -469,11 +469,12 @@ input[type="radio"].visually-hidden {
 }
 
 .nav-catalog-item {
-  margin-bottom: 20px;
+  min-width: 140px;
+  margin-bottom: 6px;
 }
 
 .nav-catalog-item:nth-child(3n+1) {
-  margin-right: 40px;
+  margin-right: 60px;
 }
 
 .nav-catalog-item:nth-child(5) {
@@ -972,7 +973,7 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 
-.service-description-item:nth-child(3) {
+.service-description-item:nth-child(1) {
   display: block;
 }
 
