@@ -634,10 +634,18 @@ input[type="radio"].visually-hidden {
 }
 
 .slide3 .slider-img-wrapper {
-  width: 460px;
+  position: relative;
+
+  width: 530px;
 
   margin-top: 10px;
-  margin-right: 80px;
+  margin-right: 10px;
+}
+
+.slide3 .slider-img {
+  position: absolute;
+  top: 55px;
+  left: -30px;
 }
 
 .slider-description {
@@ -693,6 +701,9 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-item h2 {
+  position: relative;
+  z-index: 10;
+
   margin-bottom: 4px;
 
   font-family: "Gilroy", "Calibri", sans-serif;
@@ -728,6 +739,10 @@ input[type="radio"].visually-hidden {
 
 .term-item:not(:last-child) {
   margin-right: 78px;
+}
+
+.slide3 .term-item:not(:last-child) {
+  margin-right: 47px;
 }
 
 .term {
