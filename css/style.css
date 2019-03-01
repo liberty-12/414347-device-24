@@ -494,12 +494,12 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-.nav-catalog-link:hover,
-.nav-catalog-link:focus {
+.nav-catalog-link:not(.nav-catalog-current-link):hover,
+.nav-catalog-link:not(.nav-catalog-current-link):focus {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.nav-catalog-link:active {
+.nav-catalog-link:not(.nav-catalog-current-link):active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -1452,14 +1452,16 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0.14px;
   font-weight: 300;
   color: rgba(0, 0, 0, 0.3);
+
+  cursor: pointer;
 }
 
-.breadcrumbs-link:hover,
-.breadcrumbs-link:focus {
+.breadcrumbs-item:not(:last-child) .breadcrumbs-link:hover,
+.breadcrumbs-item:not(:last-child) .breadcrumbs-link:focus {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.breadcrumbs-link:active {
+.breadcrumbs-item:not(:last-child) .breadcrumbs-link:active {
   color: rgba(0, 0, 0, 0.1);
 }
 
@@ -1700,7 +1702,7 @@ input[type="radio"].visually-hidden {
   width: 20px;
   height: 22px;
 
-  background-color: none;
+  background-color: transparent;
   background-image: url("../img/filter-button.svg");
   border: none;
 
@@ -1940,12 +1942,11 @@ input[type="radio"].visually-hidden {
 
 .catalog-description-wrapper {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .catalog-item-description {
   margin: 0;
-  margin-right: 20px;
   padding: 0;
 
   font-family: "Gilroy", "Calibri", sans-serif;
@@ -1968,6 +1969,8 @@ input[type="radio"].visually-hidden {
 .catalog-item-price {
   display: inline-block;
 
+  min-width: 100px;
+
   margin-left: auto;
 
   font-family: "Gilroy", "Calibri", sans-serif;
@@ -1976,6 +1979,7 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0.16px;
   font-weight: 300;
   color: #464646;
+  text-align: right;
 }
 
 .catalog-item-hover {
