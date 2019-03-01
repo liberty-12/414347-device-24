@@ -108,7 +108,7 @@ input[type="radio"].visually-hidden {
   display: flex;
 
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 35px;
   padding: 0;
 
   list-style: none;
@@ -377,7 +377,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-page .nav-list {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .nav-link {
@@ -1394,7 +1394,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-heading {
-  margin-top: 40px;
+  margin-top: 35px;
   margin-bottom: 25px;
   margin-left: 60px;
 
@@ -1407,7 +1407,7 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs {
-  margin-bottom: 50px;
+  margin-bottom: 45px;
   margin-left: 60px;
 }
 
@@ -1423,15 +1423,15 @@ input[type="radio"].visually-hidden {
 .breadcrumbs-item {
   position: relative;
 
-  padding-right: 60px;
+  padding-right: 38px;
 }
 
 .breadcrumbs-item:not(:last-child)::after {
   content: "";
 
   position: absolute;
-  top: 10px;
-  right: 30px;
+  top: 9px;
+  right: 17px;
 
   width: 4px;
   height: 7px;
@@ -1480,14 +1480,14 @@ input[type="radio"].visually-hidden {
   margin-left: 60px;
   margin-right: 70px;
   padding: 23px 0;
-  padding-right: 200px;
+  padding-right: 176px;
 
   background-color: #dcdcdc;
 
   font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0.91px;
+  letter-spacing: 3.91px;
   text-transform: uppercase;
   font-weight: 800;
   color: #000000;
@@ -1500,13 +1500,13 @@ input[type="radio"].visually-hidden {
 
 .sort h2 {
   margin: 0;
-  margin-right: 20px;
+  margin-right: 49px;
   padding: 23px 0;
 
   font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0.91px;
+  letter-spacing: 3.91px;
   font-weight: 800;
   text-transform: uppercase;
   color: #000000;
@@ -1517,7 +1517,7 @@ input[type="radio"].visually-hidden {
   align-items: center;
 
   margin: 0;
-  margin-right: auto;
+  margin-right: 205px;
   padding: 0;
 
   list-style: none;
@@ -1604,7 +1604,7 @@ input[type="radio"].visually-hidden {
 }
 
 .form {
-  margin-right: 70px;
+  margin-right: 73px;
   margin-left: 60px;
   padding-top: 69px;
 
@@ -1631,11 +1631,11 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-block:nth-child(2)::before {
-  top: 120px;
+  top: 140px;
 }
 
 .filter-block:nth-child(3)::before {
-  top: 410px;
+  top: 425px;
 }
 
 .filter-list {
@@ -1646,15 +1646,17 @@ input[type="radio"].visually-hidden {
 }
 
 .range-div {
+  position: relative;
+
   width: 200px;
 
-  padding-top: 16px;
+  padding-top: 12px;
 }
 
 .range-div label {
   display: block;
 
-  margin-bottom: 41px;
+  margin-bottom: 35px;
 
   font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 18px;
@@ -1670,7 +1672,7 @@ input[type="radio"].visually-hidden {
   width: 196px;
   height: 2px;
 
-  margin-bottom: 39px;
+  margin-bottom: 80px;
 
   background-color: #dbdbdb;
 }
@@ -1702,15 +1704,38 @@ input[type="radio"].visually-hidden {
 }
 
 .range-left {
-  left: -10px;
+  left: -5px;
 }
 
 .range-right {
-  left: 100px;
+  left: 108px;
 }
 
 .range-button:active {
   transform: scale(1.1);
+}
+
+.range-div span {
+  position: absolute;
+
+  display: block;
+
+  font-family: "Gilroy", "Calibri", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+  font-weight: 300;
+  color: #000000;
+}
+
+.range-div span:first-of-type {
+  bottom: -33px;
+  left: 0;
+}
+
+.range-div span:last-of-type {
+  bottom: -33px;
+  left: 90px;
 }
 
 .color,
@@ -1727,11 +1752,11 @@ input[type="radio"].visually-hidden {
 }
 
 .color {
-  margin-bottom: 55px;
+  margin-bottom: 45px;
 }
 
 .bluetooth {
-  margin-bottom: 50px;
+  margin-bottom: 32px;
 }
 
 .color legend,
@@ -1826,6 +1851,8 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-button {
+  padding: 8px 34px;
+
   border: none;
 }
 
@@ -1854,7 +1881,9 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item {
-  margin-bottom: 73px;
+  width: 360px;
+
+  margin-bottom: 47px;
 }
 
 .catalog-item:nth-child(2n-1) {
@@ -1866,12 +1895,12 @@ input[type="radio"].visually-hidden {
 
   display: block;
 
-  margin-bottom: 35px;
+  margin-bottom: 26px;
 }
 
 .catalog-item-new {
   position: absolute;
-  top: 50px;
+  top: 45px;
   right: 40px;
 
   display: block;
@@ -1912,7 +1941,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-item-description {
   margin: 0;
-  margin-right: auto;
+  margin-right: 20px;
   padding: 0;
 
   font-family: "Gilroy", "Calibri", sans-serif;
@@ -1933,6 +1962,10 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item-price {
+  display: inline-block;
+
+  margin-left: auto;
+
   font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -2008,7 +2041,7 @@ input[type="radio"].visually-hidden {
   font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0.91px;
+  letter-spacing: 3.91px;
   font-weight: 800;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.3);
@@ -2105,6 +2138,10 @@ input[type="radio"].visually-hidden {
   padding: 0;
 
   color: rgba(255, 255, 255, 0.7);
+}
+
+.main-footer .login-link {
+  margin: 0;
 }
 
 .main-footer .user-navigation-link:hover,
