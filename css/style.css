@@ -1221,6 +1221,8 @@ input[type="radio"].visually-hidden {
 
 .contacts-button {
   padding: 8px 43px;
+
+  cursor: pointer;
 }
 
 /*INDEX POPUPS*/
@@ -1379,6 +1381,8 @@ input[type="radio"].visually-hidden {
   margin-bottom: 78px;
 
   border: none;
+
+  cursor: pointer;
 }
 
 .hidden {
