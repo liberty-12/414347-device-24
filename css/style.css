@@ -212,6 +212,8 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   padding-bottom: 13px;
+  padding-top: 3px;
+  padding-left: 38px;
 
   font-family: "Open Sans", "Calibri", sans-serif;
   font-size: 15px;
@@ -227,6 +229,8 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   padding-bottom: 13px;
+  padding-top: 3px;
+  padding-left: 38px;
 
   font-family: "Open Sans", "Calibri", sans-serif;
   font-size: 15px;
@@ -1496,9 +1500,6 @@ input[type="radio"].visually-hidden {
 
 .contact-popup-form input::-webkit-input-placeholder,
 .contact-popup-form textarea::-webkit-input-placeholder {
-  padding: 16px 0;
-  padding-left: 20px;
-
   font-family: "Open Sans", "Calibri", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -1508,9 +1509,6 @@ input[type="radio"].visually-hidden {
 
 .contact-popup-form input:-ms-input-placeholder,
 .contact-popup-form textarea:-ms-input-placeholder {
-  padding: 16px 0;
-  padding-left: 20px;
-
   font-family: "Open Sans", "Calibri", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -1520,9 +1518,6 @@ input[type="radio"].visually-hidden {
 
 .contact-popup-form input::-ms-input-placeholder,
 .contact-popup-form textarea::-ms-input-placeholder {
-  padding: 16px 0;
-  padding-left: 20px;
-
   font-family: "Open Sans", "Calibri", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -1532,9 +1527,6 @@ input[type="radio"].visually-hidden {
 
 .contact-popup-form input::placeholder,
 .contact-popup-form textarea::placeholder {
-  padding: 16px 0;
-  padding-left: 20px;
-
   font-family: "Open Sans", "Calibri", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -1757,7 +1749,7 @@ input[type="radio"].visually-hidden {
           align-items: center;
 
   margin: 0;
-  margin-right: 205px;
+  margin-right: 204px;
   padding: 0;
 
   list-style: none;
@@ -2304,12 +2296,11 @@ input[type="radio"].visually-hidden {
 }
 
 .pages-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 
   margin: 0;
   padding: 0;
