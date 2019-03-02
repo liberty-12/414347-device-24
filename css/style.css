@@ -41,6 +41,11 @@ img {
   height: auto;
 }
 
+.index-page,
+.catalog-page {
+  min-width: 1200px;
+}
+
 .main-container {
   width: 1200px;
 
@@ -822,6 +827,10 @@ input[type="radio"].visually-hidden {
 .popular-link:hover::before,
 .popular-link:focus::before {
   background-color: #f0c52e;
+}
+
+.popular-link:active .popular-icon {
+  opacity: 0.3;
 }
 
 .popular-icon {
