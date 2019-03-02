@@ -982,7 +982,7 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 
-.service-description-item:nth-child(1) {
+.service-description-show {
   display: block;
 }
 
