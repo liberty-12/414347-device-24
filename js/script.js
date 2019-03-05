@@ -1,16 +1,17 @@
 var contactButton = document.querySelector(".contacts-button");
 var contactPopup = document.querySelector(".contact-popup");
 var contactCloseButton = contactPopup.querySelector(".close-button");
+var submitButton = contactPopup.querySelector(".popup-button");
 
-var input = contactPopup.querySelector(".contact-popup-container");
-var name = input.querySelector("#name");
-var email = input.querySelector("#email");
+var inputContainers = document.querySelectorAll(".contact-popup-input");
+var inputName = inputContainers[0].querySelector("[name=name]");
+var inputEmail = inputContainers[1].querySelector("[name=email]");
 
 var isStorageSupport = true;
 var storage = "";
 
 try {
-  storage = localStorage.getItem("name");
+  storage = localStorage.getItem("inputName");
 } catch (err) {
   isStorageSupport = false;
 }
@@ -18,30 +19,32 @@ try {
 contactButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   contactPopup.classList.remove("hidden");
+  contactPopup.classList.add("popup-show");
 
   if (storage) {
-    name.value = storage;
-    email.focus();
+    inputName.value = storage;
+    inputEmail.focus();
   } else {
-    name.focus();
+    inputName.focus();
   }
 });
 
 contactCloseButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   contactPopup.classList.add("hidden");
-  contactPopup.classList.remove("modal-error");
+  contactPopup.classList.remove("popup-error");
 });
 
-input.addEventListener("submit", function (evt) {
-  if (!name.value || !email.value) {
+contactPopup.addEventListener("submit", function (evt) {
+  if (!inputName.value || !inputEmail.value) {
     evt.preventDefault();
-    contactPopup.classList.remove("modal-error");
+    contactPopup.classList.remove("popup-error");
     contactPopup.offsetWidth = contactPopup.offsetWidth;
-    contactPopup.classList.add("modal-error");
-  } else {
+    contactPopup.classList.add("popup-error");
+  }
+  else {
     if (isStorageSupport) {
-      localStorage.setItem("name", name.value);
+      localStorage.setItem("inputName", inputName.value);
     }
   }
 });
@@ -51,10 +54,12 @@ window.addEventListener("keydown", function (evt) {
     evt.preventDefault();
     if (!contactPopup.classList.contains("hidden")) {
       contactPopup.classList.add("hidden");
-      contactPopup.classList.remove("modal-error");
+      contactPopup.classList.remove("popup-error");
     }
   }
 });
+
+//open-close map-popup
 
 var map = document.querySelector(".map");
 var mapPopup = document.querySelector(".map-popup");
