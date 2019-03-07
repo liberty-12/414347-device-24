@@ -377,6 +377,8 @@ input[type="radio"].visually-hidden {
 
 .catalog-page .login-link {
   margin-right: 56px;
+
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .catalog-page .user-navigation-item:nth-child(2) {
@@ -963,6 +965,10 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
+.popular-link:active span {
+  opacity: 0.3;
+}
+
 .popular-icon {
   position: relative;
   z-index: 5;
@@ -1176,18 +1182,23 @@ input[type="radio"].visually-hidden {
 }
 
 .logotypes {
-  margin-bottom: 84px;
+  margin-bottom: 74px;
 }
 
 .logotype-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
 
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.logotype-item {
+  margin-bottom: 10px;
 }
 
 .logotype-item:not(:last-child) {
@@ -1664,6 +1675,7 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
 
   margin: 0;
   padding: 0;
@@ -1799,6 +1811,10 @@ input[type="radio"].visually-hidden {
 }
 
 .sort-item {
+  margin-right: 27px;
+}
+
+.sort-item:first-child {
   margin-right: 28px;
 }
 
@@ -1921,8 +1937,12 @@ input[type="radio"].visually-hidden {
   top: 140px;
 }
 
+.filter-block:nth-child(3) {
+  position: relative;
+}
+
 .filter-block:nth-child(3)::before {
-  top: 425px;
+  top: -36px;
 }
 
 .filter-list {
@@ -2112,6 +2132,31 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
+.filter-input-checkbox:hover + label::before,
+.filter-input-checkbox:checked:hover + label::before,
+.filter-input-radio:hover + label::before,
+.filter-input-radio:checked:hover + label::before {
+  opacity: 0.6;
+}
+
+.filter-input-checkbox:active + label::before,
+.filter-input-checkbox:checked:active + label::before,
+.filter-input-radio:active + label::before,
+.filter-input-radio:checked:active + label::before {
+  opacity: 1;
+}
+
+.filter-input-checkbox:disabled + label::before,
+.filter-input-checkbox:disabled + label,
+.filter-input-checkbox:checked:disabled + label::before,
+.filter-input-checkbox:checked:disabled + label,
+.filter-input-radio:disabled + label::before,
+.filter-input-radio:disabled + label,
+.filter-input-radio:checked:disabled + label::before,
+.filter-input-radio:checked:disabled + label {
+  opacity: 0.25;
+}
+
 .filter-input-radio + label::before {
   content: "";
 
@@ -2143,7 +2188,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-button {
-  padding: 8px 34px;
+  padding: 8px 41px;
 
   border: none;
 }
@@ -2470,6 +2515,8 @@ input[type="radio"].visually-hidden {
 
 .main-footer .login-link {
   margin: 0;
+
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .main-footer .user-navigation-link:hover,
@@ -2597,22 +2644,24 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-social {
-  width: 160px;
+  min-width: 160px;
 
-  margin-right: 473px;
+  margin-right: 463px;
 }
 
 .footer-social-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.footer-social-item:not(:last-child) {
+  margin-right: 23px;
 }
 
 .footer-social-link {
