@@ -378,7 +378,7 @@ input[type="radio"].visually-hidden {
 .catalog-page .login-link {
   margin-right: 56px;
 
-  color: rgba(0, 0, 0, 0.3);
+  opacity: 0.3;
 }
 
 .catalog-page .user-navigation-item:nth-child(2) {
@@ -2575,8 +2575,6 @@ input[type="radio"].visually-hidden {
 
 .main-footer .login-link {
   margin: 0;
-
-  color: rgba(255, 255, 255, 0.3);
 }
 
 .main-footer .user-navigation-link:hover,
