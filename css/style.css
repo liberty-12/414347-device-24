@@ -1860,6 +1860,7 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2197,6 +2198,14 @@ input[type="radio"].visually-hidden {
 .filter-input-checkbox:checked:hover + label::before,
 .filter-input-radio:hover + label::before,
 .filter-input-radio:checked:hover + label::before {
+  opacity: 0.6;
+}
+
+.filter-input-checkbox:focus + label::before,
+.filter-input-checkbox:checked:focus + label::before,
+.filter-input-radio:focus + label::before,
+.filter-input-radio:checked:focus + label::before {
+  outline: 2px solid #f0c52e;
   opacity: 0.6;
 }
 
@@ -2713,11 +2722,18 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
+
+  max-width: 165px;
 
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.footer-social-item {
+  margin-bottom: 10px;
 }
 
 .footer-social-item:not(:last-child) {
