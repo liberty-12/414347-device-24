@@ -722,6 +722,12 @@ input[type="radio"].visually-hidden {
               0 0 0 8px #ffffff inset;
 }
 
+#product-1:hover ~ .slider-controls label[for="product-1"],
+#product-2:hover ~ .slider-controls label[for="product-2"],
+#product-3:hover ~ .slider-controls label[for="product-3"] {
+  opacity: 0.6;
+}
+
 .slider-img-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1860,7 +1866,8 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2194,39 +2201,6 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
-.filter-input-checkbox:hover + label::before,
-.filter-input-checkbox:checked:hover + label::before,
-.filter-input-radio:hover + label::before,
-.filter-input-radio:checked:hover + label::before {
-  opacity: 0.6;
-}
-
-.filter-input-checkbox:focus + label::before,
-.filter-input-checkbox:checked:focus + label::before,
-.filter-input-radio:focus + label::before,
-.filter-input-radio:checked:focus + label::before {
-  outline: 2px solid #f0c52e;
-  opacity: 0.6;
-}
-
-.filter-input-checkbox:active + label::before,
-.filter-input-checkbox:checked:active + label::before,
-.filter-input-radio:active + label::before,
-.filter-input-radio:checked:active + label::before {
-  opacity: 1;
-}
-
-.filter-input-checkbox:disabled + label::before,
-.filter-input-checkbox:disabled + label,
-.filter-input-checkbox:checked:disabled + label::before,
-.filter-input-checkbox:checked:disabled + label,
-.filter-input-radio:disabled + label::before,
-.filter-input-radio:disabled + label,
-.filter-input-radio:checked:disabled + label::before,
-.filter-input-radio:checked:disabled + label {
-  opacity: 0.25;
-}
-
 .filter-input-radio + label::before {
   content: "";
 
@@ -2256,6 +2230,39 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+
+.filter-input-checkbox:hover + label::before,
+.filter-input-checkbox:checked:hover + label::before,
+.filter-input-radio:hover + label::before,
+.filter-input-radio:checked:hover + label::before {
+  opacity: 0.6;
+}
+
+.filter-input-checkbox:focus + label::before,
+.filter-input-checkbox:checked:focus + label::before,
+.filter-input-radio:focus + label::before,
+.filter-input-radio:checked:focus + label::before {
+  opacity: 0.6;
+}
+
+.filter-input-checkbox:active + label::before,
+.filter-input-checkbox:checked:active + label::before,
+.filter-input-radio:active + label::before,
+.filter-input-radio:checked:active + label::before {
+  opacity: 1;
+}
+
+.filter-input-checkbox:disabled + label::before,
+.filter-input-checkbox:disabled + label,
+.filter-input-checkbox:checked:disabled + label::before,
+.filter-input-checkbox:checked:disabled + label,
+.filter-input-radio:disabled + label::before,
+.filter-input-radio:disabled + label,
+.filter-input-radio:checked:disabled + label::before,
+.filter-input-radio:checked:disabled + label {
+  opacity: 0.25;
+}
+
 
 .filter-button {
   padding: 8px 41px;
@@ -2473,7 +2480,7 @@ input[type="radio"].visually-hidden {
 .pages-item-link {
   display: block;
 
-  padding: 23px 15px;
+  padding: 23px 13px;
 
   font-family: "Gilroy", "Calibri", sans-serif;
   font-size: 16px;
@@ -2485,12 +2492,12 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-.pages-item-link:hover,
-.pages-item-link:focus {
+.pages-item-link:not(.current-page):hover,
+.pages-item-link:not(.current-page):focus {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.pages-item-link:active,
+.pages-item-link:not(.current-page):active,
 .current-page {
   color: #000000;
 }
@@ -2501,6 +2508,10 @@ input[type="radio"].visually-hidden {
   padding-right: 30px;
 
   color: #000000;
+}
+
+.pages-item:last-child .pages-item-link {
+  padding-right: 24px;
 }
 
 .pages-item:first-child {
@@ -2722,7 +2733,8 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 
   max-width: 165px;
 
